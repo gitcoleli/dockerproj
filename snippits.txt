@@ -1,3 +1,26 @@
 wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64
 
 sudo chmod +x /bin/hadolint
+
+
+to install circl ci locally 
+
+cd /tmp
+
+wget https://github.com/CircleCI-Public/circleci-cli/releases/download/v0.1.14915/circleci-cli_0.1.14915_linux_amd64.tar.gz
+
+tar zxvf circleci-cli_0.1.14915_linux_amd64.tar.gz
+
+cd circleci-cli_0.1.14915_linux_amd64
+
+to run it 
+
+./circleci
+
+mv circleci ~/
+
+mv circleci environment/
+
+moving the circlleci again into the project folder 
+
+mv circleci dockerproj/

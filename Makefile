@@ -12,12 +12,11 @@ test:
 
 validate-circleci:
 # See https://circleci.com/docs/2.0/local-cli/#processing-a-config
-circle config process .circleci/config.yml
+	circle config process .circleci/config.yml
 
-
-run-circlci-local
+run-circlci-local:
 # See https://circleci.com/docs/2.0/local-cli/#running-a-job
-circleci local execute
+	circleci local execute
 
 lint:
 	hadolint Dockerfile 
